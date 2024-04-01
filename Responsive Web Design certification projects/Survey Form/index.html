@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width= device-width initial-scale=1'>
+    <title></title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <div class='container'>
+    <h1 id='title'>Beverage Industry Survey</h1>
+    <p id='description'>Sip, Share, and Shape Your Flavor: Uncover the Best Beverages with Your Voice!</P>
+    <form id='survey-form'>
+      <fieldset>
+      <label for='name' id='name-label'>First Name: <input type='text' id='name' name='name' placeholder='Type Your Name' required></label>
+      <label for='email' id='email-label'>Email: <input type='email' id='email' placeholder='Type Your Email' required></label>
+      <label for='number' id='number-label'>Age: <input type='number' id='number' min='18' max='120' placeholder='TypeYour age' required></label>
+      </fieldset>
+      <fieldset>
+        <label class='design'>How many dollars do you spend on alcholic beverages per month: 
+        <label for='little'><input type='radio' name='money-spent' value='little' id='little' checked> > $100</label>
+        <label for='medium'><input type='radio' id='medium' value='medium' name='money-spent'> $100-$500</label>
+        <label for='plenty'><input type='radio' name='money-spent' id='plenty' value='plenty'> < $500</label></label>
+
+      
+        <label class='design'>
+          In which settings do you usally consume alcohol:
+        <label for='bars'><input type='checkbox' id='bars' name='settings' value='bars'> Bars</label>
+        <label for='clubs'><input type='checkbox' id='clubs' name='settings' value='clubs'> Night Club</label>
+        <label for='parties'><input type='checkbox' id='parties' name='settings' value='parties'> Parties</label>
+        <label for='camp-fires'><input type='checkbox' id='camp-fires' name='settings' value='camp-fires'> Camp fires</label>
+        <label for='home'><input type='checkbox' id='home' name='settings' value='home'> At home</label></label>
+
+        <label for='dropdown' class='design'>
+        What drinks do you prefer:
+        <select id='dropdown'>
+          <option value='beer'>Beer</option>
+          <option value='wine'>Wine</option>
+          <option value='vodka'>Vodka
+          <option value='Whiskey'>Whiskey</option>
+          <option value='other'>Other</option>
+        
+        </select></label>
+        
+        <label class='textarea' for='comments'>Additional Comments: <textarea id='comments'placeholder='Anything You Want To Add...' rows='4' cols='30'></textarea></label>
+        </fieldset>
+        <input type='submit' name='Submit' id='submit'>
+    </form>
+    </div>
+  </body>
+</html>

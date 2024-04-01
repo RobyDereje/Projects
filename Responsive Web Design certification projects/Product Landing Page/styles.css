@@ -1,0 +1,216 @@
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 10px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  body{
+    background-color: #f9f9f9;
+  }
+  
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: warp;
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 15vh;
+    overflow: auto;
+  }
+  
+  header div{
+    display: flex;
+    jutify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  header img{
+    width: 45px;
+    margin-right: 10px;
+  }
+  
+  header h1{
+    font-family: Verdana;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #564d9d, #337abe);
+    -webkit-background-clip: text;
+    color: transparent;
+  
+  }
+  
+  header ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    font-size: 2rem;
+    font-family: verdana;
+    font-weight: 550;
+    padding-right: 30px;
+  }
+  
+  header a{
+    text-decoration: none;
+    
+    color: #564d9d;
+    padding: 0 10px;
+  }
+  
+  header a:hover{
+    color: black;
+    transition: color 0.3s
+  }
+  
+  main{
+    font-family: sans-serif;
+    margin-top: 10vh;
+  }
+  
+  form {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  input[type='email']{
+    margin-top: 10px;
+    border: 1px ridge black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  input[type='submit']{
+    display: block;
+    border-color: transparent;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #030303;
+    margin: 10px auto;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  input[type='submit']:hover{
+    background-color: #FFD700;
+    filter: brightness(0.9);
+    color: black;
+    transition: background-color 0.3s, color 0.3s
+  }
+  
+  section{
+    /* border: 1px solid red; */
+    margin: 0 20px;
+    margin-left: 50px;
+    font-size: 2rem;
+    text-align: justify;
+  }
+  
+  h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  li{
+    padding: 10px 0;
+  }
+  
+  #features i{
+    color: #564d9d;
+    padding-right: 5px;
+  }
+  
+  .display{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%
+  }
+  
+  .watch{
+    background-color: linen;
+    text-align: center;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+    overflow: auto;
+    margin-bottom: 20px;
+  }
+  
+  .watch *{
+    padding: 10px 0;
+  }
+  
+  #buy div h3{
+    background-color: #EDE7D1;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  #buy button{
+    border-color: transparent;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #030303;
+    margin: 10px auto;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  #buy button:hover{
+    background-color: #FFD700;
+    filter: brightness(0.9);
+    color: black;
+    transition: background-color 0.3s, color 0.3s
+  }
+  
+  #buy li::before{
+    content: '\2713';
+    padding-right: 10px;
+    color: 564d9d;
+  }
+  
+  #buy li{
+    text-align: left;
+  }
+  
+  iframe{
+    max-width: 90%;
+  }
+  
+  .measure{
+    width: 340px;
+    height: 5vh;
+    border: 1px solid red;
+  }
+  
+  @media only screen and (max-width:768px){
+    header h1{
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 340px){
+    header{
+      width: auto;
+      height: 25vh;
+      padding-top: 20px;
+    }
+  }

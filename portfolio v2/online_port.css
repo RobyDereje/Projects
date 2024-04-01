@@ -1,0 +1,154 @@
+* {margin: 0;
+padding: 0;}
+
+header {background-color: rgb(29, 29, 29);
+}
+
+.navbar {
+display: flex;
+justify-content: end;
+list-style-type: none;
+/* background-color: rgb(11, 109, 109); */
+margin-right: 40px;
+margin-bottom: 50px;
+}
+
+.navbar li {
+    /* background-color: beige; */
+/* border: 2px solid red; */
+text-align: center;}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+border-bottom:2px solid rgb(57, 43, 252);
+color: darkgrey
+}
+
+.intro {text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: white;
+padding-bottom: 50px;
+font-weight: bold;}
+
+body {background-color: antiquewhite;}
+
+.face {margin: 0 auto;
+text-align: center;}
+
+.face img {
+    /* border: 2px solid red; */
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;}
+
+.about_bg {background-color: darkgrey;
+padding-top: 10px;}
+
+.description {
+    font-size: 20px;
+    color: white;
+}
+
+.description a {
+    color: white;
+}
+
+.description i:hover {
+    color: orangered;
+}
+
+.description2 {
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+}
+
+.description2 button {background-color: rgb(78, 78, 78);
+color: white;
+width: 30%;
+height: 20%;
+}
+
+.description2 button a {color: white;
+text-decoration: none;}
+
+.description2 button:hover {background-color: rgb(36, 36, 36);}
+
+.projects{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.samples {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: darkgrey;
+}
+
+.samples img {
+    max-width: 20%;
+    border-radius: 10%;
+}
+.samples img:hover {
+    border-radius: 0%;
+}
+
+.middle {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.middle img {max-width: 18%;
+padding-bottom: 20px;}
+
+.middle img:hover {
+    border: 2px solid darkgrey;
+    border-radius: 50%;
+}
+
+footer {background-color: rgb(29, 29, 29);
+    margin-top: 50px;
+    padding: 50px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+footer p {
+    margin-left: 30px;
+}
+
+.copyright {text-align: center;}
+
+footer div {
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+footer div a {
+    color: white
+}
+
+footer div i {
+    padding: 5px;
+
+}
+
+footer div i:hover {
+    color: orangered;
+}
+

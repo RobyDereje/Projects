@@ -1,0 +1,51 @@
+body {background: linear-gradient(rgb(241, 240, 245), rgb(240, 240, 240), rgb(245, 243, 245));
+font-size: 20px;
+font-family: papyrus;
+color: Black;} 
+
+
+h1 {text-align: center;
+color: black;}
+ 
+p {text-align: center;}
+
+label {display:block;}
+fieldset {border-bottom: 3px solid cornflowerblue;
+border-top: 0;
+border-right: 0;
+border-left: 0;
+box-shadow: 0 0 10px cornflowerblue;
+margin: 10px 2px;
+padding: 1em 3em;}
+
+textarea {margin-top: 5px;
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(rgb(23, 245, 205), cornflowerblue);
+  font-family: papyrus;
+  font-size: 17px;
+  box-shadow: 0 0 6px cornflowerblue;}
+
+input[type='submit'] {background: linear-gradient(rgb(23, 45, 255), cornflowerblue);
+color: white;
+width: 30%;
+height: 10%;
+font-family: papyrus;
+font-size: 30px}
+
+button{
+  background-color: rgb(10, 210, 10);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10%
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+a {text-decoration:none; color:black; font-size: 20px; margin-left: 20px;}
+a:hover{color:red; text-decoration:underline;}

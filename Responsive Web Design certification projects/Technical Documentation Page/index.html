@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>SQL Documentation Page</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <nav id='navbar'>
+      <header>SQL Documentation</header>
+      <ul>
+        <li><a class='nav-link' href='#Introduction_to_SQL'>Introduction to SQL</a></li>
+        <li><a class='nav-link' href='#Relational_Databases'>Relational Databases</a></li>
+        <li><a class='nav-link' href='#Basic_SQL_Syntax'>Basic SQL Syntax</a></li>
+        <li><a class='nav-link' href='#Data_Types'>Data Types</a></li>
+        <li><a class='nav-link' href='#Managing_Tables'>Managing Tables</a></li>
+      </ul>
+    </nav>
+    <main id='main-doc'>
+      <section class='main-section' id='Introduction_to_SQL'>
+        <header>Introduction to SQL</header>
+        <p>Structured Query Language (SQL) is a powerful and standardized programming language designed for managing and manipulating relational databases. SQL is the language of choice for interacting with databases, making it a fundamental skill for anyone working with data-driven applications or systems.</p>
+        <h2>Purpose of SQL
+</h2>
+        <p>SQL serves as a universal interface between applications and relational database management systems (RDBMS). Its primary purpose is to allow users to perform various tasks related to the storage, retrieval, modification, and deletion of data in a database.</p>
+        <h2>Importance of SQL in the Software Ecosystem
+</h2>
+        <p>In today's software landscape, SQL plays a crucial role in various domains:</p>
+        <ul>
+          <li><span>Web Development:</span> SQL is widely used in backend systems to manage data for web applications. It facilitates dynamic content generation, user authentication, and data storage.</li>
+          <li><span>Data Analysis and Reporting:</span> Analysts and data scientists leverage SQL for querying and aggregating data, making it a vital tool for extracting valuable insights from large datasets.</li>
+          <li><span>System Integration:</span> SQL enables seamless integration between different software systems and databases, fostering interoperability in complex software architectures.</li>
+        </ul>
+      </section>
+      <section class='main-section' id='Relational_Databases'> 
+        <header>Relational Databases</header>
+        <p>Relational databases are a fundamental component of modern data management systems. They provide a structured and efficient way to store, organize, and retrieve data through a system of tables, relationships, and constraints. Understanding the principles of relational databases is crucial for designing and maintaining robust and scalable data solutions.</p>
+        <p>Key concepts include:</p>
+        <ol>
+          <li><span>Tables:</span> Structured two-dimensional entities with rows and columns.</li>
+          <li><span>Rows:</span> Individual records within a table, holding specific data.</li>
+          <li><span>Columns:</span> Define attributes of the data, each with a specific data type.</li>
+          <li><span>Primary Keys:</span> Uniquely identify each row in a table for data integrity.</li>
+          <li><span>Foreign Keys:</span> Establish relationships between tables for data normalization.</li>
+        </ol>
+        <h2 class='pad'>Relationships</h2>
+        <ul>
+          <li><span>One-to-One (1:1):</span> Each record in Table A is associated with one record in Table B.</li>
+          <li><span>One-to-Many (1:N):</span> Each record in Table A can be associated with multiple records in Table B.</li>
+          <li><span>Many-to-Many (M:N):</span> Complex associations achieved through a junction table.</li>
+        </ul>
+        <p>A solid grasp of relational databases is crucial for effective data storage and retrieval. In the next sections, we'll explore creating, managing, and interacting with relational databases using SQL. Let's dive deeper into the world of databases and data modeling.</p>
+        </section>
+      <section class='main-section' id='Basic_SQL_Syntax'>
+        <header>Basic SQL Syntax</header>
+        <p>SQL (Structured Query Language) provides a straightforward syntax for interacting with relational databases. Understanding the basics of SQL syntax is essential for querying, inserting, updating, and deleting data effectively.</p>
+        <h2>SELECT Statement</h2>
+        <p>The <span class='decrease'>`SELECT`</span> statement is the cornerstone of SQL and is used to retrieve data from one or more tables.</p>
+        <div>
+        <code>
+          -- Retrieve all columns from the "employees" table<br>
+SELECT * FROM employees;
+<hr>
+-- Retrieve specific columns<br>
+SELECT first_name, last_name, job_title FROM employees;<hr>
+
+-- Apply conditions using the WHERE clause<br>
+SELECT * FROM employees WHERE department_id = 1;
+        </code></div>
+        <h2>INSERT Statement</h2>
+        <p>The <span class='decrease'>`INSERT`</span> statement is used to add new records to a table.</p>
+        <div>
+        <code>
+          -- Insert a single record into the "employees" table<br>
+INSERT INTO employees (first_name, last_name, job_title)<br>
+VALUES ('John', 'Doe', 'Developer');<hr>
+
+-- Insert multiple records<br>
+INSERT INTO employees (first_name, last_name, job_title) <br>
+VALUES ('Jane', 'Smith', 'Designer'),<br>
+       <span class='indent'>('Mike', 'Johnson', 'Analyst');</span>
+        </code></div>
+        <h2>UPDATE Statement</h2>
+        <p>The <span class='decrease'>`UPDATE`</span> statement modifies existing records in a table.</p>
+        <div>
+        <code>
+          -- Update job title for a specific employee<br>
+UPDATE employees SET job_title = 'Senior Developer' WHERE employee_id = 101;<hr>
+
+-- Update multiple columns<br>
+UPDATE employees SET job_title = 'Manager', department_id = 2 WHERE department_id = 1;
+        </code></div>
+        <h2>DELETE Statement</h2>
+        <p>The <span class='decrease'>`DELETE`</span> statement removes records from a table based on specified conditions.</p>
+        <div>
+        <code>
+          -- Delete a specific employee<br>
+DELETE FROM employees WHERE employee_id = 102;<hr>
+
+-- Delete all employees in a particular department<br>
+DELETE FROM employees WHERE department_id = 3;
+        </code></div>
+        <h2>Comments</h2>
+        <p>Comments in SQL can be added using <span>`--`</span> for single-line comments or <span>`/* */`</span> for multi-line comments.</p>
+        <div><code>
+          -- This is a single-line comment<hr>
+/*<br>
+   This is a<br>
+   multi-line comment<br>
+*/<br>
+        </code></div>
+      </section>
+      <section class='main-section' id='Data_Types'>
+        <header>Data Types</header>
+        <p>Data types in SQL define the type of data that can be stored in a column of a table. Understanding and selecting appropriate data types is crucial for maintaining data accuracy and optimizing storage.</p>
+        <h2 >Common Data Types</h2>
+        <h3>1. INTEGER:</h3>
+        <p class='dot'>Used for whole numbers without decimals.
+</p>
+        <div>
+        <code>
+          CREATE TABLE employees (<br>
+    <span class='indent'>employee_id INTEGER,</span><br>
+    <span class='indent'>salary INTEGER</span><br>
+);
+        </code></div>
+        <h3>2. VARCHAR(n):</h3>
+        <p class='dot'>Variable-length character strings with a maximum length of 'n'.
+</p>
+        <div><code>
+          CREATE TABLE customers (<br>
+    <span class='indent'>customer_id INTEGER,</span><br>
+    <span class='indent'>first_name VARCHAR(50),</span><br>
+    <span class='indent'>last_name VARCHAR(50)</span><br>
+);
+        </code></div>
+        <h3>3. DATE:</h3>
+        <p class='dot'>Stores date values.
+</p>
+        <div><code>
+          CREATE TABLE orders (<br>
+    <span class='indent'>order_id INTEGER,</span><br>
+    <span class='indent'>order_date DATE</span><br>
+);
+        </code></div>
+        <h3>4. DECIMAL(p, s):</h3>
+        <p class='dot'>Fixed-point decimal numbers with precision 'p' and scale 's'.
+</p>
+        <div><code>
+          CREATE TABLE products (<br>
+    <span class='indent'>product_id INTEGER,</span><br>
+    <span class='indent'>price DECIMAL(8, 2)</span><br>
+);
+        </code></div>
+        <h3>5. BOOLEAN:</h3>
+        <p class='dot'>Represents true or false values.
+</p>
+        <div><code>
+          CREATE TABLE tasks (<br>
+    <span class='indent'>task_id INTEGER,</span><br>
+    <span class='indent'>completed BOOLEAN</span><br>
+);
+        </code></div>
+        <h3>6. CHAR(n):
+</h3>
+        <p class='dot'>Fixed-length character strings with a length of 'n'.
+</p>
+        <div><code>
+          CREATE TABLE departments (<br>
+    <span class='indent'>department_id INTEGER,</span><br>
+    <span class='indent'>department_code CHAR(3)</span><br>
+);
+        </code></div>
+        <h3>7. TEXT:
+</h3>
+        <p class='dot'>Variable-length character strings for large amounts of text.
+</p>
+        <div><code>
+          CREATE TABLE articles (<br>
+    <span class='indent'>article_id INTEGER,</span><br>
+    <span class='indent'>content TEXT</span><br>
+);
+        </code></div>
+      </section>
+      <section class='main-section' id='Managing_Tables'> 
+        <header>Managing Tables</header>
+        <p>Tables are the building blocks of relational databases, providing structure to organize and store data. Understanding how to create and manage tables is a fundamental aspect of working with SQL.</p>
+        <h2>Creating Tables</h2>
+        <p>Use the <span class='decrease'>`CREATE TABLE`</span> statement to define a new table, specifying the columns along with their data types and any constraints.</p>
+        <div><code>
+          -- Creating an "employees" table<hr>
+CREATE TABLE employees (<br>
+    <span class='indent'>employee_id INTEGER PRIMARY KEY,</span><br>
+    <span class='indent'>first_name VARCHAR(50),</span><br>
+    <span class='indent'>last_name VARCHAR(50),</span><br>
+    <span class='indent'>job_title VARCHAR(100),</span><br>
+    <span class='indent'>salary DECIMAL(10, 2),</span><br>
+    <span class='indent'>hire_date DATE</span><br>
+);
+        </code></div>
+        <h2>Adding Constraints</h2>
+        <p>Constraints ensure data integrity and enforce rules on columns. Common constraints include:</p>
+        <ul>
+          <li><span class='decrease'>PRIMARY KEY:</span>
+            <p>Ensures uniqueness and serves as the primary identifier for a record.</p>
+            </li>
+          <li><span class='decrease'>FOREIGN KEY:</span>
+            <p>Establishes a link between tables, enforcing referential integrity.</p>
+          </li>
+          <li><span class='decrease'>NOT NULL:</span>
+            <p>Requires a column to have a non-null value.</p>
+          </li>
+          <li><span class='decrease'>UNIQUE:</span>
+            <p>Ensures that all values in a column are distinct.</p>
+          </li>
+        </ul>
+        <div><code>
+          -- Adding constraints to the "employees" table<br>
+ALTER TABLE employees<br>
+ADD CONSTRAINT pk_employee PRIMARY KEY (employee_id),<br>
+ADD CONSTRAINT fk_department FOREIGN KEY (department_id) <br>REFERENCES departments(department_id),<br>
+ADD CONSTRAINT chk_salary CHECK (salary >= 0);
+        </code></div>
+        <h2>Modifying Tables</h2>
+        <p>The <span class='decrease'>`ALTER TABLE`</span> statement allows modifications to an existing table, such as adding, modifying, or dropping columns.</p>
+        <div><code>
+          -- Adding a new column to the "employees" table<br>
+ALTER TABLE employees<br>
+ADD COLUMN email VARCHAR(100);<br>
+        </code></div>
+        <h2>Deleting Tables</h2>
+        <p>The <span class='decrease'>`DROP TABLE`</span> statement removes an existing table and its data entirely.</p>
+        <div><code>
+          -- Deleting the "employees" table<br>
+DROP TABLE employees;
+        </code></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+
+main{
+    padding-bottom: 30px;
+    border-left: 4px solid lightgrey;
+  }
+  html, body{
+    margin:0;
+  }
+  
+  #navbar *, body{
+    border: none;
+  }
+  
+  body{
+    background-color:#fcfcfc;
+  }
+  
+  #navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  
+  
+  #navbar header{
+    padding: 30px 5px 20px;
+    font-size: 1.5rem;
+    font-weight:700;
+    font-family: 'Helvetica'
+  }
+  
+  #navbar *:not(header){
+    margin:0;
+    padding: 0;
+  }
+  
+  #navbar li{
+    list-style: none;
+    line-height: 2;
+    padding-left: 20px;
+  }
+  
+  #navbar li::before{
+    content:'➡️';
+  }
+  
+  #navbar a{
+    font-size: 1.23rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  #navbar a:hover{
+    color: grey;
+  }
+  
+  #main-doc{
+    margin-left: 250px;
+  }
+  
+  #main-doc header{
+    font-size: 1.75rem;
+    font-family: Verdana;
+    font-weight: 800;
+    padding: 30px;
+  }
+  
+  #main-doc *{
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  h2{
+    font-family: verdana;
+    font-size: 1.25rem;
+    padding-top: 10px;
+  }
+  
+  .pad {
+    padding-bottom: 5px;
+  }
+  
+  p{
+    font-size: 1.15rem;
+    font-family: sans-serif;
+    padding: 10px ;
+  }
+  
+  #main-doc li{
+    font-size: 1.15rem;
+    font-family: sans-serif;
+    padding: 5px;
+  }
+  
+  span:not(.indent){
+    font-weight: bold;
+  }
+  
+  h3{
+    padding: 5px 0;
+  }
+  
+  p.dot::before {
+        content: "\2022"; 
+        display: inline-block;
+        margin-right: 0.25em;
+      }
+  
+  .decrease{
+    font-size:1rem
+  }
+  
+  div{
+    width: 70%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    overflow: auto;
+    white-space: nowrap;
+    border-radius: 5px;
+    position:relative;
+    font-size: 0.9rem;
+  }
+  
+  hr{
+    height: 2vh;
+    border:none;
+  }
+  
+  .indent{
+    padding-left: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    #navbar{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    overflow: auto;
+    white-space: wrap;
+    background-color:#f0f0f0;
+  
+  }
+    
+    #navbar li{
+      display: inline-block;
+    }
+  
+    main{
+    border-left: none;
+  }
+  #main-doc{
+    margin-left: 0px;
+  }
+  }
+  

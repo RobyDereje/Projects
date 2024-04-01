@@ -1,0 +1,60 @@
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background: linear-gradient(rgb(255,210,210), rgb(255,100,100))
+}
+
+.right {
+  right: 0;
+  background: linear-gradient(rgb(210,210,255), rgb(100,100,255))
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.righttext {
+  position: absolute;
+  left: 80%;
+  transform: translate(65%, -30%);
+  text-align: right;
+  width: 12%;
+  height: 12%
+}
+
+.music {
+  background-color: rgb(250, 120,120);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  text-align: center;
+  background: -webkit-linear-gradient(rgb(255,210,210), rgb(255,50,50));
+}
+
+.movies {
+  background-color: rgb(120, 120, 250);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  text-align: center;
+  background: -webkit-linear-gradient(#aef, #159);
+}

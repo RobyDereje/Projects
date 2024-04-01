@@ -1,0 +1,179 @@
+* {margin: 0;
+padding: 0}
+
+@font-face {
+    font-family: myFont;
+    src: url('fonts/Nabla-Regular.ttf');
+}
+
+@font-face {
+    font-family: font1;
+    src: url('fonts/Merriweather-Regular.ttf');
+}
+
+@font-face {
+    font-family: font2;
+    src: url('fonts/IrishGrover-Regular.ttf');
+}
+
+@font-face {
+    font-family: font3;
+    src: url('fonts/JotiOne-Regular.ttf');
+}
+
+body {
+    background-image: url('portfolio_images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.first_name {
+    position: absolute;
+    top: 20%;
+    right: 28% ;
+    font-family: 'Nosifer', sans-serif;
+    font-size: 40px;
+    background: -webkit-linear-gradient(#020202, #7e7c7b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.last_name {
+    position: absolute;
+    top: 28%;
+    right: 23.2%;
+    transform: rotate(180deg);
+    font-family: 'Nosifer', sans-serif;
+    font-size: 40px;
+    background: -webkit-linear-gradient(#020202, #7e7c7b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.greeting {font-size: 60px;
+margin-top: 280px;
+margin-left: 60px;
+font-family: myFont;}
+
+.greeting2 {
+    font-size: 50px;
+    margin-left: 70px;
+    font-family: myFont;
+}
+
+.face {
+width: 250px;
+height: 250px;
+position: absolute;
+right: 3%;
+top: 10%;}
+
+.sun {width: 70%}
+
+.sec {
+    background-color: #d9d9d9;
+    width: 100%;
+}
+
+.intro {
+    width: 70%;
+    margin:0 auto;
+    margin-top: -200px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    text-align: center;
+    font-family: font1;
+} 
+
+.projects {
+    font-size: 60px;
+    font-family: font2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.space {width: 33%;
+    display: inline-block;
+    
+}
+
+.samples {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #d9d9d9;
+}
+
+.samples img {
+    max-width: 20%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.flex img{
+    width: 18%;
+}
+
+.left {margin-right: 10px;}
+
+.flex2 {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25vh;;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.flex2 img {
+    max-width: 18%;
+}
+
+.contact {
+    font-size: 30px;
+    margin-left: 30px;
+    font-family: font3;
+    
+}
+
+.lastcontact {
+    margin-bottom: 15vh;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.totop {
+    background: -webkit-linear-gradient(#0073e6, #00bfff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: inital;
+    color: #000;
+    transition: background 1s; 
+    
+    font-size: 80px;
+    position: absolute;
+    bottom: -460%;
+    right: 5%;
+}
+
+.totop:hover {
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+

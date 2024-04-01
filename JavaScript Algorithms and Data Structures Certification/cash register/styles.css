@@ -1,0 +1,95 @@
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body{
+    background-color: #e6f5e6;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+  }
+  
+  form *{
+    display: block;
+    margin: 10px auto;
+    font-size: 1.5rem;
+  }
+  
+  label {
+    text-align: center;
+  }
+  
+  input {
+    text-align: center;
+    width: 200px
+  }
+  
+  button {
+    padding: 2px 10px;
+    transition: background-color 0.3s ease, color 0.4s ease;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: whitesmoke;
+  }
+  
+  #change-due {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding-top:18px
+  }
+  
+  .change {
+    background-color: lightgrey;
+    height: 80vh;
+    width: 400px;
+    margin: 30px auto;
+  }
+  
+  .total-price {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  background-color: grey;
+    padding-right: 40px;
+  }
+  
+  h3{
+    color: whitesmoke;
+  }
+  
+  .change-list{
+    background-color: linen;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .currency {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.3
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-family: Helvetica, sans-serif;
+    margin-left: 20px;
+    padding: 4px 0
+  }
